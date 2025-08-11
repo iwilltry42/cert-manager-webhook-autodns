@@ -21,3 +21,5 @@ config.json
 # Make artifacts
 _out
 _test
+
+*.tgz
