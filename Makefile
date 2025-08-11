@@ -1,8 +1,8 @@
 OS ?= $(shell go env GOOS)
 ARCH ?= $(shell go env GOARCH)
 
-IMAGE_NAME := "cert-manager-webhook-autodns"
-IMAGE_TAG := "latest"
+IMAGE_NAME := ghcr.io/iwilltry42/cert-manager-webhook-autodns
+IMAGE_TAG := $(shell git rev-parse --short HEAD)
 
 OUT := $(shell pwd)/_out
 
